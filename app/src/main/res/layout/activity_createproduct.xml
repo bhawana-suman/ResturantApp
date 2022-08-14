@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createproduct"
+    android:background="#dcf2f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Create Product"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topbar"
+            android:textSize="20dp"
+            android:text="Name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_below="@+id/name"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Enter the product name"
+                android:paddingStart="15dp"/>
+
+            <TextView
+                android:id="@+id/discription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit1"
+                android:textSize="20dp"
+                android:text="Discription"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/discription"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Write discription..."
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/cuisine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit2"
+                android:textSize="20dp"
+                android:text="Product Cuision"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/cuisine"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/down_arrow"
+                android:hint="    Choose the Cuisine"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit3"
+                android:textSize="20dp"
+                android:text="Status"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/status"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/down_arrow"
+                android:hint="Enable"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/idea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit4"
+                android:textSize="20dp"
+                android:text="Product Order"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/edit5"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/idea"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="105"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit5"
+                android:textSize="20dp"
+                android:text="Category"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/edit6"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/category"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/down_arrow"
+                android:hint="Pizza"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <TextView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit6"
+                android:textSize="20dp"
+                android:text="Category"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_preview"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="43dp"
+                android:backgroundTint="#3cb4c3"
+                android:layout_below="@+id/preview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:text="create product"
+                android:layout_marginTop="30dp"
+                android:textSize="16dp"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/dish_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/money_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/delivered_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/accounticon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

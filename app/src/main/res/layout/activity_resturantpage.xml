@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resturantpage"
+    android:background="#dcf2f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Resturant"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+
+            <ImageView
+                android:id="@+id/pasta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pasta"
+                android:layout_below="@+id/topbar"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/resturantname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Resturant Name"
+                android:layout_below="@+id/topbar"
+                android:layout_toRightOf="@+id/pasta"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/resturantname1"
+                android:layout_toRightOf="@+id/location_logo"
+                android:layout_marginLeft="5dp"
+                android:text="Street Address, Pin Code"/>
+
+            <ImageView
+                android:id="@+id/location_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"
+                android:layout_below="@id/resturantname1"
+                android:layout_toRightOf="@id/pasta"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:id="@+id/india"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INDIA"
+                android:layout_below="@id/detail"
+                android:layout_toRightOf="@+id/location_logo"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/india"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/history_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   History"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableLeft="@drawable/edit_icon"
+                android:drawableRight="@drawable/side_arrow"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Edit Resturant"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/edit_time_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Edit Timing"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/delivery_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Delivered orders"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+            <EditText
+                android:id="@+id/edit5"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Reset Password"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+            <EditText
+                android:id="@+id/edit6"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit5"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/logout_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Logout"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+            <EditText
+                android:id="@+id/edit7"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edit6"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/delete_icon"
+                android:drawableTint="#3cb4c3"
+                android:paddingStart="15dp"
+                android:text="   Delete Account"
+                android:textSize="18dp"
+                android:drawableRight="@drawable/side_arrow"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/dish_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/money_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/delivered_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/accounticon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

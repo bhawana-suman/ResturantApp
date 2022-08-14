@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/accounticon.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/backarrow.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/down_arrow.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/edittext_bg.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/location.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/drawable/side_arrow.xml" value="0.19" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_createcategorypage.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_createproduct.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_loginpage.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_registrationpage.xml" value="0.2682291666666667" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_resturantpage.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/LENOVO/Desktop/Android Studio Projects/ResturantApp/app/src/main/res/layout/activity_resturanttiming.xml" value="0.25885416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

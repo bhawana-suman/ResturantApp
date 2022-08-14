@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resturanttiming"
+    android:background="#dcf2f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/topbar"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="#3cb4c3">
+
+
+                <ImageButton
+                    android:id="@+id/backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#3cb4c3"
+                    android:src="@drawable/backarrow" />
+
+                <TextView
+                    android:id="@+id/resturantname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/backarrow"
+                    android:text="Resturant Timings"
+                    android:textColor="#dcf2f5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topbar"
+                android:textSize="19dp"
+                android:text="MONDAY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/edit1"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit1"
+                android:textSize="19dp"
+                android:text="TUESDAY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuesday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuesday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/edit1"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="WEDNESDAY"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/open3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wednesday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wednesday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit5"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit6"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_toRightOf="@id/edit1"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"/>
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit5"
+                android:textSize="19dp"
+                android:text="THURSDAY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thursday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thursday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit7"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit8"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/edit1"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FRIDAY"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/open5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit9"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit10"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open5"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/edit1"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit9"
+                android:textSize="19dp"
+                android:text="SATURDAY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saturday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saturday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit11"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit12"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open6"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_toRightOf="@id/edit1"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"/>
+
+            <TextView
+                android:id="@+id/sunday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit11"
+                android:textSize="19dp"
+                android:text="SUNDAY"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/open7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sunday"
+                android:textSize="18dp"
+                android:text="Open Time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/close7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sunday"
+                android:layout_toRightOf="@+id/open1"
+                android:textSize="18dp"
+                android:text="Close Time"
+                android:layout_marginLeft="118dp"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/edit13"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 AM"
+                android:paddingStart="10dp"/>
+
+            <EditText
+                android:id="@+id/edit14"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/open7"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_toRightOf="@id/edit1"
+                android:drawableRight="@drawable/clock_icon"
+                android:drawableTint="#56585A"
+                android:paddingEnd="10dp"
+                android:hint="10:00 PM"
+                android:paddingStart="10dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/blank_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomnav"
+        android:background="#615D5D"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3cb4c3">
+
+        <ImageButton
+            android:id="@+id/homeicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/dish_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/staricon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/homeicon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/money_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/carticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/staricon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/delivered_icon"
+            app:tint="#dcf2f5"/>
+
+        <ImageButton
+            android:id="@+id/accounticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/carticon"
+            android:backgroundTint="#3cb4c3"
+            android:src="@drawable/accounticon" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
